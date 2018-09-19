@@ -36,7 +36,7 @@ for file in os.listdir():
                 pass
             else:
                 d["e_{0}".format(file_name)].append(i)
-        savefile.write('{0}\n'.format(file_name.upper())+str(len(d["v_{0}".format(file_name)])) + ' sur ' + str(d["c_{0}".format(file_name)])+ ' pour valider:')
+        savefile.write('{0}\n'.format(file_name.upper())+str(len(d["v_{0}".format(file_name)])) + ' sur ' + str(d["c_{0}".format(file_name)]) + ' pour valider:')
         savefile.write('\nValidation ')
         savefile.write(str(sorted(d["v_{0}".format(file_name)])))
         savefile.write('\nEntrainement ')
@@ -51,7 +51,7 @@ for file in os.listdir():
         # Validation GeoDataFrame
         d["Val_{0}".format(file_name)] = d["{0}".format(file_name)].drop(d["{0}".format(file_name)].index[d["e_{0}".format(file_name)]])
 
-        #Export results
+        # Export results
         if not os.path.exists('ENTRAINEMENT'):
             os.makedirs('ENTRAINEMENT')
 
