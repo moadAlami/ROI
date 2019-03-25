@@ -16,7 +16,7 @@ This why this script has been developed.
 
 # 2. Principle
 
-The ROI-Auto python3 script reads all of the ESRI shapefiles in a directory, and using a pseudo random number generator; it determines the polygones that are going to be used for the training and validation. Then, it puts them in separate foloders (in the same directory).
+The ROI-Auto python3 script reads all of the ESRI shapefiles in a directory, and using a pseudo random number generator; it determines the polygones that are going to be used for the training and validation. Then, it puts them in separate foloders (in the same directory) after backing up the original files.
 At the end of the operation, a report is generated with the IDs of the polygons chosen for training / validation.
 
 # 3. Data preparation and structure
