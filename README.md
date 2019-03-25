@@ -19,6 +19,10 @@ This why this script has been developed.
 The ROI-Auto python3 script reads all of the ESRI shapefiles in a directory, and using a pseudo random number generator; it determines the polygones that are going to be used for the training and validation. Then, it puts them in separate foloders (in the same directory) after backing up the original files.
 At the end of the operation, a report is generated with the IDs of the polygons chosen for training / validation.
 
+## Installation
+
+No installation, just run the roi.py (using a python 3 interpreter) inside the MultiPolygons directory.
+
 ## Data preparation and structure
 
 As of now, the script only supports ESRI shapefiles.
