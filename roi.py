@@ -2,13 +2,13 @@ import geopandas as gpd
 import random
 import os
 
+
 d = {}
 
 savefile = open('Report.txt', 'w')
 savefile = open('Report.txt', 'a')
 
 for file in os.listdir():
-
     if file.endswith('.shp'):
         file_name = file[:-4]
         d["{0}".format(file_name)] = gpd.read_file(file)
